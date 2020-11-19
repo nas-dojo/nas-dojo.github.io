@@ -19,7 +19,7 @@ function render() {
     if (sphere === null) {
         c = Math.floor(Math.random() * Math.floor(10))-5;
         sphere = document.createElement('a-sphere');
-        sphere.setAttribute('color', '#FF9500');
+        sphere.setAttribute('color', '#009500');
         sphere.setAttribute('radius', '1.25');
         sphere.setAttribute('position', c + ' 1.25 -5');
         scene.appendChild(sphere);
