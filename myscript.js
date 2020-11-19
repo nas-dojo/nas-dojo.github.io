@@ -9,7 +9,8 @@ var sphere = null;
 // scene.appendChild(sphere);
 
 
-
+const ctlL = document.getElementById("ctlL");
+const ctlR = document.getElementById("ctlR");
 
 var t = 0;
 var c = 0;
