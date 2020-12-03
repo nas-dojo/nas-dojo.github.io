@@ -29,11 +29,11 @@ function render() {
     // requestAnimationFrame(render);
     // sphere.setAttribute('position', c+ ' 0 ' + (-100+t));
     
-    // if (t>100) {
-    //     scene.removeChild(sphere);
-    //     sphere = null;
-    //     t=0;
-    // }
+    if (t>100) {
+        scene.removeChild(sphere);
+        sphere = null;
+        t=0;
+    }
     
 }
 render();
