@@ -25,15 +25,16 @@ function render() {
         scene.appendChild(sphere);
     }
 
+    t += 1;
+    requestAnimationFrame(render);
+    sphere.setAttribute('position', c+ ' 0 ' + (-100+t));
+    
     if (t>100) {
         scene.removeChild(sphere);
         sphere = null;
         t=0;
     }
-
-    t += 1;
-    requestAnimationFrame(render);
-    sphere.setAttribute('position', c+ ' 0 ' + (-100+t));
+    
 }
 render();
 
